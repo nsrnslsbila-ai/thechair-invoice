@@ -197,7 +197,7 @@ export default function HomePage() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 print:hidden no-print" data-print-hidden="true">
         {activeTab === 'dashboard' && (
           <DashboardView
             invoices={invoices}
@@ -253,7 +253,7 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-900 py-6 text-center text-xs text-zinc-500 print:hidden">
+      <footer className="border-t border-zinc-900 py-6 text-center text-xs text-zinc-500 print:hidden no-print" data-print-hidden="true">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>
             <strong className="text-zinc-400">{company.name}</strong> • Creative Studio Invoice & Cashflow System

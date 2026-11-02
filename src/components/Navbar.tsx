@@ -32,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   pendingCount,
 }) => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md print:hidden no-print" data-print-hidden="true">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
